@@ -13,8 +13,8 @@
             border-collapse: collapse;
         }
         caption{
-            font-size:1.33m;
-            font-weight: bold;
+            font-size:1.3m;
+            font-weight:bold;
             padding:1opx
         }
         th, td{
@@ -32,15 +32,22 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
 
         </thead>
+
+        <tfoot>
+            <tr>
+                <th colspan="4"scope="row">Total</th>
+                <td>00000</td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -59,11 +66,24 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td colspan="3">Homens</td>
+                <td rowspan="3" scope="rowgroup">Homens</td>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
                 <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wail-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Oriver</td>
+                <td>Toy Story</td>
+
             </tr>
 
         </tbody>
